@@ -1,0 +1,103 @@
+:root {
+    --lg: #f0f0f0;
+    --dlg: rgb(99, 99, 99);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+button, .add-monthly-expense-btn {
+    cursor: pointer;
+}
+.border {
+    border: 1px solid black;
+}
+
+.header {
+  width: 100vw;
+  height: 10vh;
+  min-height: 2.4rem;
+  background-color: var(--dlg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-text {
+  color: white;
+}
+.home-main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  padding: 1.5rem;
+}
+.add-monthly-expense-btn {
+  padding: 1rem;
+  font-weight: bold;
+}
+.display-expense-periods {
+  background-color: lightgray;
+  width: 100%;
+  padding: 3rem;
+  max-width: 1000px;
+  overflow-wrap: wrap;
+  min-height: 400px;
+}
+.expense-period {
+  list-style-type: none;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 50px;
+  background-color: var(--lg);
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+.expense-period:last-of-type {
+  margin: 0;
+}
+
+/* Section below is expenses.html exclusively */
+
+.expenses-main-section {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    padding: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
+    column-gap: 1rem;
+}
+.left-side{
+    min-height: 800px;
+    background-color: lightgray;
+    padding: 1.5rem;
+}
+.right-side {
+    min-height: 800px;
+    background-color: var(--lg);
+}
+.transaction-table-header {
+    margin-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.add-transaction-btn {
+    width: 3rem;
+    height: 3rem;
+    font-weight: bold;
+}
+.descriptors {
+    background-color: var(--lg);
+}
+
+.expense-descriptors {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 2rem;
+    list-style-type: none;
+}
